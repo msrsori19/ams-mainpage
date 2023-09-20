@@ -734,6 +734,7 @@ $(document).ready(function() { //variant-remove
         thisForm.find('.form-error, .form-success').remove();
         submitButton.attr('data-text', submitButton.text());
         thisForm.append('<div class="form-error" style="display: none;">' + thisForm.attr('data-error') + '</div>');
+        thisForm.append('<div class="form-error" style="display: none;">' + thisForm.attr('data-error2') + '</div>');
         thisForm.append('<div class="form-success" style="display: none;">' + thisForm.attr('data-success') + '</div>');
         formError = thisForm.find('.form-error');
         formSuccess = thisForm.find('.form-success');

@@ -1,1 +1,9 @@
 /****** PLACE YOUR CUSTOM STYLES HERE ******/
+
+.tm-text-color {
+    color: white;
+}
+
+.lead.mb40 {
+    color: white;
+}

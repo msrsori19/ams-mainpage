@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Foundry Multi-purpose HTML Template</title>
+        <title>ART PORJECT Lien AMS </title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
@@ -12,6 +12,7 @@
         <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
     <body class="scroll-assist">
         <div class="nav-container">
@@ -83,51 +84,36 @@
             </nav>
         </div>
         <div class="main-container">
-            <section class="kenburns cover fullscreen image-slider slider-arrow-controls controls-inside">
+            <!--
+                그리고 이미지가 나오지 않는 것은,
+                img tag 위에 
+                class="background-image-holder"
+                class="overlay image-bg bg-light"
+                class="slides"
+                class="cover fullscreen"
+                clss tag가 전부 있어야 합니다.
+                그래야 정상적으로 이미지가 나옵니다.
+            -->
+            <section class="cover fullscreen"> <!-- 예라님, 세션이 시작되면,-->
                 <ul class="slides">
-                    <li class="image-bg pt-xs-240 pb-xs-240">
+                    <li class="overlay image-bg bg-light">
                         <div class="background-image-holder">
                             <img alt="image" class="background-image" src="img/Lien-background.jpg" />
                         </div>
                         <div class="container v-align-transform">
                             <div class="row">
                                 <div class="col-sm-10 col-sm-offset-1 text-center">
+                                    <h1 class="mb40 mb-xs-16 large" style="color: white;">Make what <br> We Love Better<br /> </h1>
+                                    <p class="lead mb40" style="color: white;">
+                                        우리가 사랑하는 미술이, 미술품 한점 한점이
+                                        <br />오래 오래 우리 곁에서 영감이 될 수 있도록 
+                                    </p>
                                 </div>
                             </div>
-                            <!--end of row-->
                         </div>
-                        <!--end of container-->
-
-                        </section>
-                <div class="main-container">
-                    <section class="cover fullscreen image-slider slider-all-controls controls-inside parallax">
-                        <ul class="slides">
-                            <li class="overlay image-bg bg-light">
-                                <div class="background-image-holder">
-                                    <img alt="image" class="background-image" src="img/Lien-background2.jpg" />
-                                </div>
-                                <div class="container v-align-transform">
-                                    <div class="row">
-                                        <div class="col-sm-10 col-sm-offset-1 text-center">
-                                            <h1 class="mb40 mb-xs-16 large">Make what <br> We Love Better
-                                                <br /> </h1>
-                                            <!--h6 class="uppercase mb16">A performance focussed template.</h6-->
-                                            <p class="lead mb40">
-                                                우리가 사랑하는 미술이, 미술품 한점 한점이
-                                                <br />오래 오래 우리 곁에서 영감이 될 수 있도록 
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!--end of row-->
-                                </div>
-                                <!--end of container-->
-                   
-            </section>
-            <!--section class="pt240 pb240 image-bg parallax">
-                <div class="background-image-holder">
-                    <img alt="image" class="background-image" src="img/Lien-etc.jpg" />
-                </div>
-            </section-->
+                    </li>
+                </ul>
+            </section> <!-- 세션이 종료가 되아야 하는데요. 코드가 정상적으로 닫히지 않았어요.-->
             <a id="about"></a>
             <section class="pt180 pb180 pt-xs-80 pb-xs-80">
                 <div class="container">
@@ -140,57 +126,52 @@
                         </div>
                     </div>
                     <!--end of row-->
-        </section>
-        <section class="bg-dark">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 text-center">
-                        <h4>리앙의 최신 소식을 받아 보세요</h4>
-                        <!--p class="lead">
-                            Get special offers and news on newest cellar releases.
-                        </!--p>
+                </div>
+            </section>
+            <section class="bg-dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <h4>리앙의 최신 소식을 받아 보세요</h4>
+                        </div>
+                    </div>
+                    <div class="row mb40 mb-xs-24">
+                        <div class="col-sm-6 col-sm-offset-3">
+                            <form class="form-newsletter halves" data-success="리앙에 등록해주셔서 감사합니다." data-error="올바른 이메일 형식을 입력해주세요.">
+                                <input type="text" name="email" class="mb0 transparent validate-email validate-required signup-email-field" placeholder="Email Address" />
+                                <button type="submit" class="mb0">SUBSCRIBE</button><br>
+                            </form>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <span class="sub">&copy; Copyright 2023 Art Project Lien All right reserved. <br> #1213, 12F, 146, Teheran-ro, Gangnam-gu, Seoul, Republic of Korea  </span>
+                        </div>
+                        <div class="col-sm-6 text-right">
+                            <ul class="list-inline social-list">
+                                <li>
+                                    <a href="#">
+                                        <i class="ti-announcement"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="ti-email"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="ti-location-arrow"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <!--end of row-->
-                <div class="row mb40 mb-xs-24">
-                    <div class="col-sm-6 col-sm-offset-3">
-                        <form class="form-newsletter halves" data-success="리앙에 등록해주셔서 감사합니다." data-error="올바른 이메일 형식을 입력해주세요.">
-                            <input type="text" name="email" class="mb0 transparent validate-email validate-required  signup-email-field" placeholder="Email Address" />
-                            <button type="submit" class="mb0">SUBSCRIBE</button>
-                            <iframe srcdoc="<!-- Begin MailChimp Signup Form --><link href=&quot;https://cdn-images.mailchimp.com/embedcode/classic-081711.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;><style type=&quot;text/css&quot;>	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */</style><div id=&quot;mc_embed_signup&quot;><form action=&quot;//mrare.us8.list-manage.com/subscribe/post?u=77142ece814d3cff52058a51f&amp;id=94d040322a&quot; method=&quot;post&quot; id=&quot;mc-embedded-subscribe-form&quot; name=&quot;mc-embedded-subscribe-form&quot; class=&quot;validate&quot; target=&quot;_blank&quot; novalidate>    <div id=&quot;mc_embed_signup_scroll&quot;>	<h2>Subscribe to our mailing list</h2><div class=&quot;indicates-required&quot;><span class=&quot;asterisk&quot;>*</span> indicates required</div><div class=&quot;mc-field-group&quot;>	<label for=&quot;mce-EMAIL&quot;>Email Address  <span class=&quot;asterisk&quot;>*</span></label>	<input type=&quot;email&quot; value=&quot;&quot; name=&quot;EMAIL&quot; class=&quot;required email&quot; id=&quot;mce-EMAIL&quot;></div><div class=&quot;mc-field-group&quot;>	<label for=&quot;mce-FNAME&quot;>First Name </label>	<input type=&quot;text&quot; value=&quot;&quot; name=&quot;FNAME&quot; class=&quot;&quot; id=&quot;mce-FNAME&quot;></div><div class=&quot;mc-field-group&quot;>	<label for=&quot;mce-LNAME&quot;>Last Name </label>	<input type=&quot;text&quot; value=&quot;&quot; name=&quot;LNAME&quot; class=&quot;&quot; id=&quot;mce-LNAME&quot;></div>	<div id=&quot;mce-responses&quot; class=&quot;clear&quot;>		<div class=&quot;response&quot; id=&quot;mce-error-response&quot; style=&quot;display:none&quot;></div>		<div class=&quot;response&quot; id=&quot;mce-success-response&quot; style=&quot;display:none&quot;></div>	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->    <div style=&quot;position: absolute; left: -5000px;&quot;><input type=&quot;text&quot; name=&quot;b_77142ece814d3cff52058a51f_94d040322a&quot; tabindex=&quot;-1&quot; value=&quot;&quot;></div>    <div class=&quot;clear&quot;><input type=&quot;submit&quot; value=&quot;Subscribe&quot; name=&quot;subscribe&quot; id=&quot;mc-embedded-subscribe&quot; class=&quot;button&quot;></div>    </div></form></div><script type='text/javascript' src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script><!--End mc_embed_signup-->" class="mail-list-form">
-                            </iframe>
-                        </form>
-                    </div>
-                </div>
-                <!--end of row-->
-                <div class="row">
-                    <div class="col-sm-6">
-                        <span class="sub">&copy; Copyright 2023 Art Project Lien All right reserved. <br> #1213, 12F, 146, Teheran-ro, Gangnam-gu, Seoul, Republic of Korea  </span>
-                    </div>
-                    <div class="col-sm-6 text-right">
-                        <ul class="list-inline social-list">
-                            <li>
-                                <a href="#">
-                                    <i class="ti-announcement"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="ti-email"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="ti-location-arrow"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!--end of container-->
-        </div>
-        <!--end modal strip-->
+                <!--end of container-->
+                
+            </section>
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/flickr.js"></script>
@@ -204,5 +185,6 @@
         <script src="js/smooth-scroll.min.js"></script>
         <script src="js/parallax.js"></script>
         <script src="js/scripts.js"></script>
+        <!-- <script src="js/custom.js"></script> 이메일 구독 스크립트 (기능 구현 완료) -->
     </body>
 </html>
