@@ -775,7 +775,7 @@ $(document).ready(function () {
                     userEmailField.val(""); // Clear the email field
                 },
                 error: function () {
-                    displayMessage(thisForm, 'error', '이메일 전송 중 오류가 발생했습니다. 다시 시도해주세요.');
+                    displayMessage(thisForm, 'error', '이미 등록된 이메일 주소 입니다.');
                 },
                 complete: function () {
                     submitButton.prop("disabled", false); // Enable submit button
