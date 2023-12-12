@@ -129,6 +129,7 @@
                 </div>
                 <!--end of container-->
             </section>
+            
             <section class="bg-dark">
                 <div class="container">
                     <div class="row">
@@ -136,12 +137,22 @@
                             <h4>리앙의 최신 소식을 받아 보세요</h4>
                         </div>
                     </div>
+                    <style>
+                        /* Add these styles to customize the subscribe button */
+                        .form-newsletter button {
+                            background-color: white !important;
+                            color: black !important;
+                            outline: none !important; /* Remove the green outline around the button */
+                            border: none !important; /* Remove any border */
+                            /* Add any other styles you need for the button */
+                        }
+                    </style>
                     <div class="row mb40 mb-xs-24">
 
                         <div class="col-sm-6 col-sm-offset-3">
                             <form class="form-newsletter halves" data-success="리앙에 등록해주셔서 감사합니다." data-error="올바른 이메일 형식을 입력해주세요.">
                                 <input type="text" name="email" class="mb0 transparent validate-email validate-required signup-email-field" placeholder="Email Address" />
-                                <button type="submit" class="mb0">SUBSCRIBE</button><br>
+                                <button type="submit" class= "mb0" >SUBSCRIBE</button><br>
                                 
                             </form>
                         </div>
